@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nicole</title>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nicole Palmer</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="particles"></div>
-
-<section class="hero">
-  <div class="portal"></div>
-
-  <img src="nicole.jpg" class="model" alt="Nicole">
-
-  <h1>NICOLE</h1>
-
-  <div class="cards">
-      <a href="https://instagram.com/nicole_palmer2005" target="_blank" class="card">📸 Instagram</a>
-      <a href="https://www.tiktok.com/@nicolepalmer2005" target="_blank" class="card">🎵 TikTok</a>
-      <button class="card vip" onclick="openAgeGate()">⭐ Fanvue VIP</button>
-  </div>
-
-  <footer>© 2026 Nicole · All Rights Reserved</footer>
-</section>
-
-<div id="ageGate" class="overlay">
-  <div class="modal">
-    <h2>18+ Adult Access</h2>
-    <p>Questo collegamento porta a contenuti destinati a persone maggiorenni.</p>
-    <label><input type="checkbox" id="adult"> Confermo di avere almeno 18 anni</label>
-
-    <div class="buttons">
-      <button onclick="enterFanvue()">ENTER</button>
-      <button onclick="closeAgeGate()">BACK</button>
-    </div>
-  </div>
+<div class="bg"></div>
+<div class="loader"><h1>NICOLE PALMER</h1><p>ENTER THE EXPERIENCE</p></div>
+<main class="hero">
+<div class="glass">
+<h1>NICOLE PALMER</h1>
+<p class="subtitle">Official Personal Hub</p>
+<a class="btn" href="https://instagram.com/nicole_palmer2005">Instagram</a>
+<a class="btn" href="https://www.tiktok.com/@nicolepalmer2005">TikTok</a>
+<button class="btn accent" onclick="openGate()">Exclusive Access</button>
 </div>
-
+</main>
+<div id="gate" class="overlay">
+<div class="modal">
+<h2>Age Verification</h2>
+<p>Please confirm you are 18 years of age or older.</p>
+<label><input type="checkbox" id="age"> I am 18+</label>
+<button onclick="proceed()">Continue</button>
+<button onclick="closeGate()">Back</button>
+</div></div>
+<footer>© 2026 Nicole Palmer · Privacy · Terms</footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
